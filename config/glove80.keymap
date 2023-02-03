@@ -37,7 +37,7 @@
 
 #define HOST_OS 2  // set to 2 for macOS/Windows-Alt-Codes, default is 0 (Windows)
 
-#include "helper.h"
+#include "config/helper.h"
 #include "international_chars/russian.dtsi"
     
 // bind keys swap to LEFT shift, so they do not intefere with MEH/HYPER
