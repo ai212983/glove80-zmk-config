@@ -67,7 +67,7 @@ L_MODMORPH(gra_til, &kp GRAVE, &kp TILDE)
         usb-state   = <5>;
         output-fallback = <15>;
     };
-}
+};
 
 / {
     /* Glove80 system behavior & macros */
