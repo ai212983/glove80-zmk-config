@@ -14,6 +14,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+/* required for underglow-indicators */
+#include <dt-bindings/led/led.h>
 
 #define HYPR LC(RS(LA(LGUI)))
 #define MEH LC(RS(LALT))
@@ -33,6 +35,7 @@
 
 #include "helper.h"
 #include "international_chars/russian.dtsi"
+
 
 // bind keys swap to LEFT shift, so they do not intefere with MEH/HYPER
 #define L_MODMORPH(name, uc_binding, shifted_uc_binding) \
@@ -108,6 +111,19 @@ L_MODMORPH(gra_til, &kp GRAVE, &kp TILDE)
         flavor = "tap-preferred";
         tapping-term-ms = <200>;
         bindings = <&mo>, <&rgb_ug_status_macro>;
+    };
+
+    underglow_indicators: underglow-indicators {
+        compatible  = "zmk,underglow-indicators";
+        layer-state = <35 29 23 17 11 6>;
+        bat-lhs     = <36 30 24 18 12 7>;
+        bat-rhs     = <29 29 23 23 17 17>;
+        capslock    = <22>;
+        numlock     = <16>;
+        scrolllock  = <10>;
+        ble-state   = <3 4 0 1>;
+        usb-state   = <5>;
+        output-fallback = <15>;
     };
 
     keymap {
