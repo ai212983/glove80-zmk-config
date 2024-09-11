@@ -54,7 +54,8 @@
 L_MODMORPH(dqt_sqt, &kp DQT, &kp SQT)
 L_MODMORPH(gra_til, &kp GRAVE, &kp TILDE)
 
-{
+/* looks like it is broken as for now, 11 Sep 2024
+
     underglow_indicators: underglow-indicators {
         compatible  = "zmk,underglow-indicators";
         layer-state = <35 29 23 17 11 6>;
@@ -67,7 +68,8 @@ L_MODMORPH(gra_til, &kp GRAVE, &kp TILDE)
         usb-state   = <5>;
         output-fallback = <15>;
     };
-};
+
+*/
 
 / {
     /* Glove80 system behavior & macros */
