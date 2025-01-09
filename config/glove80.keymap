@@ -214,7 +214,7 @@ L_MODMORPH(gra_til, &kp GRAVE, &kp TILDE)
     };
 };
 
-
+/* not supported by older versions
     &underglow_indicators {
         compatible  = "zmk,underglow-indicators";
         layer-state = <35 29 23 17 11 6>;
@@ -227,5 +227,5 @@ L_MODMORPH(gra_til, &kp GRAVE, &kp TILDE)
         usb-state   = <5>;
         output-fallback = <15>;
     };
-
+*/
 
